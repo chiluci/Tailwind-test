@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex">
+  <!-- Sidebar Include Here -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <header class="flex items-center justify-between bg-white shadow p-4">
+      <h1 class="text-xl font-semibold">Settings</h1>
+    </header>
+    <main class="p-6 overflow-auto">
+      <!-- Enhanced Settings Form -->
+      <form class="bg-white rounded-lg shadow p-6 space-y-6 max-w-xl">
+        <!-- Profile Section -->
+        <div class="space-y-4">
+          <h2 class="text-lg font-medium">Profile</h2>
+          <div>
+            <label class="block text-sm font-medium">Name</label>
+            <input type="text" class="mt-1 block w-full border rounded-lg px-3 py-2 focus:outline-none" placeholder="Your name">
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input type="email" class="mt-1 block w-full border rounded-lg px-3 py-2 focus:outline-none" placeholder="you@example.com">
+          </div>
+        </div>
+        <!-- Security Section -->
+        <div class="space-y-4">
+          <h2 class="text-lg font-medium">Security</h2>
+          <div>
+            <label class="block text-sm font-medium">Password</label>
+            <input type="password" class="mt-1 block w-full border rounded-lg px-3 py-2 focus:outline-none" placeholder="New password">
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+              <span class="ml-2 text-sm">Enable Two-Factor Authentication</span>
+            </label>
+          </div>
+        </div>
+        <!-- Preferences Section -->
+        <div class="space-y-4">
+          <h2 class="text-lg font-medium">Preferences</h2>
+          <div>
+            <label class="block text-sm font-medium">Language</label>
+            <select class="mt-1 block w-full border rounded-lg px-3 py-2 focus:outline-none">
+              <option>English</option>
+              <option>Українська</option>
+              <option>Español</option>
+            </select>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" id="dark-mode-toggle" class="form-checkbox h-5 w-5 text-blue-600">
+              <span class="ml-2 text-sm">Dark Mode</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+              <span class="ml-2 text-sm">Email Notifications</span>
+            </label>
+          </div>
+        </div>
+        <!-- Timezone Section -->
+        <div class="space-y-4">
+          <h2 class="text-lg font-medium">Time & Locale</h2>
+          <div>
+            <label class="block text-sm font-medium">Timezone</label>
+            <select class="mt-1 block w-full border rounded-lg px-3 py-2 focus:outline-none">
+              <option>UTC+03:00 Kyiv</option>
+              <option>UTC+00:00 London</option>
+              <option>UTC-05:00 New York</option>
+            </select>
+          </div>
+        </div>
+        <!-- Submit -->
+        <div class="pt-4">
+          <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Save Settings</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
